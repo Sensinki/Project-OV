@@ -1,0 +1,450 @@
+    /* fonts begin */
+    @font-face {
+        font-family: 'AcuminVariable';
+        src: url('../fonts/AcuminVariableConcept.otf');
+        font-style: normal;
+        font-weight: 300;
+    }
+    
+    @font-face {
+        font-family: 'Filson Pro Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Filson Pro Regular'), url('FilsonProRegular.woff') format('woff');
+        }
+
+    @font-face {
+        font-family: 'Filson Pro Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Filson Pro Black'), url('FilsonProBlack.woff') format('woff');
+    }
+    /*fonts end*/
+    
+	*{
+        margin: 0;
+        padding: 0;
+        font-family: 'AcuminVariable';
+    }
+
+    
+    /* background begin */
+
+    #index{
+        background-image: url(../afbeeldingen/background.png);
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    /* background end */
+
+    /* header */
+
+    header{
+        margin-bottom: 50px;
+        width: 100%;
+        background-image: url(../afbeeldingen/header.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+    }
+
+      
+    header nav ul li a {
+        display: block;
+        padding: 14px;
+        text-decoration: none;
+    }
+      
+
+    #nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    header nav ul li{
+        display: inline-block;
+    }
+
+    .overlay-content{
+        display: flex;
+    }
+
+    img.home{
+        margin-left: 10px;
+        margin-bottom: 8px;
+        height: 50px;
+        width: 60px;
+    }
+
+    img.navbar{
+        margin-right: 25px;
+        margin-bottom: 10px;
+        height: 40px;
+        width: 45px;
+    }
+
+
+    /* navbar begin*/
+
+    /* w3school */
+
+    .overlay {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	.overlay-content {
+		position: relative;
+		top: 25%;
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+	}
+
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.overlay a:hover,
+	.overlay a:focus {
+		color: #f1f1f1;
+	}
+
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+
+	@media screen and (max-height: 450px) {
+        .overlay a {
+                font-size: 20px
+        }
+
+        .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+        }
+	}
+
+    /* navbar end*/
+
+    /* header end*/
+
+
+    /* main begin */
+
+    h1{
+        height: unset;
+        width: unset;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        padding: 30px;
+        color: white;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        background-color: #FF9200;
+        font-family: Filson Pro Black;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .question{
+        margin-top: 150px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    h2{
+        height: unset;
+        width: unset;
+        margin: 10px;
+        margin-bottom: 30px;
+        color: white;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
+        background-color: #1B1464;
+        font-family: Filson Pro Regular;
+        text-align: center;
+    }
+    
+    p{
+        margin: 10px;
+        padding-bottom: 30px;
+        font-family: AcuminVariable;
+        font-size: 15pt;
+    }
+
+    a{
+        color: #FF9200;
+        font-family: AcuminVariable;
+    }
+
+    section{
+        margin: 5%;
+        margin-bottom: 50px;
+    }
+
+    ol section li{
+        margin-left: 25px;
+        font-family: AcuminVariable;
+        color: #1B1464;
+        font-weight: bold;
+    }
+
+    .blue{
+        color: #1B1464;
+        font-weight: 600;
+    }
+
+    main .transport li{
+        margin: auto;
+        font-size: 20px;
+        margin-left: 25px;
+        list-style: none;
+    }
+
+    main ul li{
+        margin: auto;
+        font-size: 20px;
+        list-style: square;
+        margin-left: 25px;
+    }
+    /* image begin */
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    #yes{
+        height: 75px;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    #no{
+        height: 75px;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    /*img end*/
+
+    /* button begin */
+
+
+    .submit{
+        display: inline-block;
+        padding: 9px 15px;
+        margin: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1B1464;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #FF9200;
+    }
+
+    .index{
+        display: grid;
+        padding: 9px 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #0c0835;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #9b5a04;
+        width: 150px;
+    }
+
+    button {
+        display: inline-block;
+        padding: 9px 15px;
+        margin: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1B1464;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px #FF9200;
+    }
+
+    button:link{
+        text-decoration: none;
+    }
+    
+    button:active {
+        background-color: #FF9200;
+        box-shadow: 0 5px #1B1464;
+        transform: translateY(4px);
+    }
+
+    .open {
+        display: inline-block;
+        padding: 9px 15px;
+        margin: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1B1464;
+        border: none;
+        border-radius: 10px;
+    } 
+
+    .content {
+        border-radius: 5px;
+        cursor: pointer;
+        margin: -1%;
+        padding: 8px 10px;
+        background: #FF9200;
+    }
+
+    .yesno{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .yesno li{
+        margin: auto;
+        list-style: none;
+    }
+    /* button end */
+
+    
+    /*main end*/
+    
+
+    /* footer begin */
+
+    footer{
+        overflow: hidden;
+        position: sticky;
+        bottom: 0;
+    }
+
+    footer nav {
+        background-color: #FF9200;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    footer nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    footer nav ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: medium;
+    }
+
+    footer nav ul li a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #upload{
+        height: 50px;
+        width: 50px;
+    }
+
+    #using{
+        height: 50px;
+        width: 50px;
+    }
+
+    #info{
+        height: 40px;
+        width: 40px;
+    }
+
+    #best{
+        height: 40px;
+        width: 40px;
+    }
+
+    #apply{
+        height: 40px;
+        width: 40px;
+    }
+      
+    /* footer end */
+
+    /* dark mode bagin */
+
+    body {
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+    
+    .dark-mode {
+        background-color: #0f0b3b;
+        color: white;
+    }
+
+    .dark-mode li{
+        color: #ffffff;
+    }
+
+    #dark{
+        position: fixed;
+        display: block;
+        right: 5px;
+        bottom: 100px;
+    }
+
+    
+
