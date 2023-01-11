@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/java.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <title>The best option </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html"><img class="home" src="afbeeldingen/home.png" alt="home"></a></li>
+                <li>
+                    <div id="myNav" class="overlay">
+
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×
+                        </a>
+
+                        <ul class="overlay-content">
+                            <li><a href="ov.html">Information</a></li>
+                            <li><a href="best-option.html">Best choice</a></li>
+                            <li><a href="apply.html">Apply for OV</a></li>
+                            <li><a href="opladen.html">Upload money</a></li>
+                            <li><a href="using.html">How to use?</a></li>
+                        </ul>
+                    </div>
+
+                    <img class="navbar" onclick="openNav()" src="afbeeldingen/navbar.png" alt="navbar">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <button id="dark" onclick="myFunction()">Dark</button>
+
+        <section>
+            <h1>Which OV is for you?</h1>
+            <p>Find out which ov card is right for you by solving the checklist below. It is a very easy and fast.</p>
+            <p>You should mark what is relatable for you. Then see which one have you marked the most. That's your
+                result. Let's find out.</p>
+        </section>
+
+        <section id="checklist">
+            <section>
+                <h2>Personal OV</h2>
+                <p>Tick the options that suit you</p>
+                <form action="apply.html">
+                    <input type="checkbox" id="studen" name="student" value="Student">
+                    <label for="studen">I am a student.</label><br>
+                    <input type="checkbox" id="transpor" name="transport" value="Transport">
+                    <label for="transpor">I use public transport at least 4 days a week</label><br>
+                    <input type="checkbox" id="du" name="duo" value="Duo">
+                    <label for="du">I have DUO</label><br>
+                    <input type="checkbox" id="worke" name="worker" value="Worker">
+                    <label for="worke">I am a parttime worker</label><br>
+                    <input type="checkbox" id="ag" name="age" value="Age">
+                    <label for="ag">My age is between 15-60</label><br>
+                    <input type="submit" class="submit" name="submit" value="submit">
+                </form>
+            </section>
+
+            <section>
+                <h2>Anonymous OV</h2>
+                <p>Tick the options that suit you</p>
+                <form action="apply.html">
+                    <input type="checkbox" id="tudent" name="student" value="Student">
+                    <label for="tudent">I am not a student</label><br>
+                    <input type="checkbox" id="ransport" name="transport" value="Transport">
+                    <label for="ransport">I use rarely public transport</label><br>
+                    <input type="checkbox" id="uo" name="duo" value="Duo">
+                    <label for="uo">I have no DUO</label><br>
+                    <input type="checkbox" id="orker" name="worker" value="Worker">
+                    <label for="orker">I am working from home</label><br>
+                    <input type="checkbox" id="ge" name="age" value="Age">
+                    <label for="ge">My age is between 0-15 or above 60</label><br>
+                    <input type="submit" class="submit" name="submit" value="submit">
+                </form>
+            </section>
+
+            <section>
+                <h2>Business OV</h2>
+                <p>Tick the options that suit you</p>
+                <form action="apply.html">
+                    <input type="checkbox" id="student" name="student" value="Student">
+                    <label for="student">I am not a student</label><br>
+                    <input type="checkbox" id="transport" name="transport" value="Transport">
+                    <label for="transport">I use public transport at least 4 days a week</label><br>
+                    <input type="checkbox" id="duo" name="duo" value="Duo">
+                    <label for="duo">I have no DUO</label><br>
+                    <input type="checkbox" id="worker" name="worker" value="Worker">
+                    <label for="worker">I am a fulltime worker</label><br>
+                    <input type="checkbox" id="age" name="age" value="Age">
+                    <label for="age">My age is between 18-60</label><br>
+                    <input type="submit" class="submit" name="submit" value="submit">
+                </form>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="blue">
+                <li><a href="ov.html"><img src="afbeeldingen/info.png" alt="info" id="info"></a>info</li>
+                <li><a href="best-option.html"><img src="afbeeldingen/bestoption.png" alt="best-option"
+                            id="best"></a>best option</li>
+                <li><a href="apply.html"><img src="afbeeldingen/apply.png" alt="apply" id="apply"></a>apply</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
